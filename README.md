@@ -14,11 +14,13 @@ In this classification problem microRNAs are positive, and pseudo-hairpin RNAs a
 
 In python, I wrote a 3-layer neural network using libraries: **torch, pandas, and matplotlib**. The dataset was input using **pandas dataframe** (I just like using pandas; always have used for working with data). After randomizing the orders, the dataset was split into train, validation, test (respectively 70:15:15 ratio). I split the training dataset again into 24 mini batches for smoother training process (I have an old laptop). I used dictionary objects for this step. Training ran for **45 epochs** with learning rate of **3e-4**. The NN architecture is made up of 128, 64, 2 neurons; in first, second, and third layer respectively (2 hidden, 1 output). Activation function **ReLU** was used in hidden layers, and normalization function **Softmax** was used in output layer. Everything afterwards is straightforward business as usual, so I am skipping the further detail. Attached below are the sample outputs.
 
+### Output at the end of epoch 45
 |  Epoch |  Training Loss  |  Validation Loss  |  Test Prediction Accuracy |
 |:------:|:------:|:-----:|:-----:|
 | 45/45 | 0.012 | 0.012 | 0.984 |
 
-
+### Training Performance Plot
+![image](https://github.com/braaxxad/3NN-microRNA-classification/blob/master/3NN-microRNA-classifcation-sample-output.png)
 
 ## Extra Notes
 1. it is difficult to identify miRNAs directly because they are relatively very short (only ~20 sequences long), which means features to extract for classification is very minimal, or even almost impossible. Thus, most studies today focus on identifying precursor miRNA (pre-miRNAs) rather the mature form. In life span of micro RNA, there are three stages in its cyle: primary -> premature -> mature. Identifying pre-miRNAs is easier in comparison to mature miRNAs because pre-miRNAs are a lot longer (~80 sequences) and this allows room for the molecules to form hairpin-loop structure with more structural features. [Back to summary](#summary)
@@ -31,4 +33,3 @@ In python, I wrote a 3-layer neural network using libraries: **torch, pandas, an
 ## Reference
 
 > 1.  R. Batuwith, and V. Palade. microPred: effective classification of pre-miRNAs for human miRNA gene prediction. Bioinformatics Vol 25 Issue 8 pages 989-995. (2009) https://doi.org/10.1093/bioinformatics/btp107
-2. 
