@@ -22,6 +22,11 @@ In python, I wrote a 3-layer neural network using libraries: **torch, pandas, an
 ### Training Performance Plot
 ![image](https://github.com/braaxxad/3NN-microRNA-classification/blob/master/3NN-microRNA-classifcation-sample-output.png)
 
+## What's Next?
+I have already finished a Recurrent Neural Network that is able to learn from the raw RNA seqeunces, rather than the handcrafted features used in `this.project`. Another upside to using raw sequences is that it is available in virtually infinite quantity. Also, I did not have to do extra work on the data side, I just had to collect them from a database called [miRBase](http://www.mirbase.org/). They provide identified microRNAs across many species (both eukaryote and prokaryote).
+
+I am currently editting and organizing the python code (again built with Pytorch). Only problem I have with this model is that my laptop does not have a GPU that is compatible for usage. So I was not able to take advantage of Pytorch Cuda for faster performance.
+
 ## Extra Notes
 1. It is difficult to identify miRNAs directly because they are relatively very short (only ~20 sequences long), which means features to extract for classification is very minimal, or even almost impossible. Thus, most studies today focus on identifying premature miRNA (pre-miRNAs) rather the mature form. In life span of micro RNA, there are three stages in its cyle: primary -> premature -> mature. Identifying pre-miRNAs is easier in comparison to mature miRNAs because pre-miRNAs are much longer (~80 sequences) and this allows room for the molecules to form hairpin-loop structure with more structural features. [Back to summary](#summary)
 
