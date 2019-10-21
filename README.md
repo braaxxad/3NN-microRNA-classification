@@ -34,7 +34,7 @@ I am currently editting and organizing the python code (again built with Pytorch
 
 3. I chose the clusters with highest accuracy because I believe they yielded highest based on reasoning that they are statistically more differentiable from the positive data (microRNA). Because I am working with relatively small dataset for this classification, it would be in my best interest to design my dataset that would train my actual model towards ability to differentiate positive from negative as much as possible. [Back to summary](#summary)
 
-**About note number 3: This project was done more than an year ago. As I track back now, I see that maybe picking out each equal amount of data from the 12 clusters would be a better idea. This would better represent the whole dataset of 8494 pseudo-hairpin RNAs.**
+**About note number 3: This project was done awhile ago. As I track back now, I see that maybe picking out each equal amount of data from the 12 clusters would be a better idea. This would better represent the whole dataset of 8494 pseudo-hairpin RNAs.**
 
 
 ## Reference
