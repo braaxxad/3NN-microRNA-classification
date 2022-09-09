@@ -3,7 +3,7 @@
 ## Motivation
 > *“Machine Learning: field of study that gives computers the ability to learn without being clearly programmed”* **– Arthur Samuel 1959**
 
-I wanted to use this idea and apply it in biology. More specifically, field of deep learning offers endless possibilities, literally anywhere; why not biology? As long as the data is served, it is **all you can eat, free-for-all, a line of buffet.** 
+I wanted to use this idea and apply it in biology. More specifically, field of deep learning offers endless possibilities, literally anywhere; why not biology?
 
 Although this program is **3-layer neural network**, it actually does not practice deep learning. Nevertheless, this gave me a great start in developing programs towards deep learning, utilizing a machine learning tool such as **Pytorch.**
 
